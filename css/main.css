@@ -175,7 +175,7 @@ input[type="checkbox"]{
   padding: 20% 20% 5% 5%;
 }
 .eslogan {
-    color: #fff;
+    color: #000;
     font-size: 45px;
     font-weight: 700;
     font-family: 'heavitasregular', sans-serif;
@@ -226,4 +226,108 @@ input[type="checkbox"]{
     line-height: 1.5;
     padding: 0;
     text-align: center;
+}
+.destacados {
+    max-width: 100%;
+}
+.destacados h4 {
+  text-align: center;
+  font-size: 40px;
+  margin: 5% 0 0 0;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    margin: 0 3%;
+    padding: 3%;
+}
+@media (max-width: 768px){
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px){
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.galeria div img {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+}
+.galeria div p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4%;
+    padding: 0%;
+}
+.galeria div a {
+  display: flex;
+  color: white;
+  background-color: #002e55;
+  margin: auto;
+  padding: 2%;
+  justify-content: center;
+  border-radius: 5px;
+  max-width: 50%;
+  cursor: pointer;
+}
+#ayuda-para-elegir {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+    padding: 3%;
+    max-width: 100%;
+    background-color: white;
+}
+@media (max-width: 768px){
+    #ayuda-para-elegir {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 480px){
+    #ayuda-para-elegir {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.boton-titulo h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px;
+    padding: 0 5% 5% 5%;
+    text-align: center;
+}
+.boton-titulo a {
+    background-color: var(--color-1);
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    transition: all 0.3s ease;
+    max-width: 200px;
+}
+@media (max-width: 480px){
+    .boton-titulo a {
+        max-width: 85%;
+    }
+}
+.parrafos-x {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    line-height: 1.5;
+    padding: 0;
+    text-align: center;
+}
+@media (max-width: 480px){
+    .parrafos-x {
+        font-size: 16px;
+    }
 }
