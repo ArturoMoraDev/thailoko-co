@@ -22,6 +22,7 @@
 }
 
 #logo {
+    padding: 0 0 0 15px;
     width: 150px;
     height: 75px; 
 }
@@ -39,8 +40,8 @@ nav{
   background: var(--color-1);;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0px 0 10px;
-  margin-right: 100px;
+  padding: 0px;
+  
   flex-wrap: wrap;
 }
 nav .logo{
@@ -82,13 +83,13 @@ input[type="checkbox"]{
 }
 @media (max-width: 768px){
   nav{
-      max-width: 95%;
-    padding: 0 30px 0 10px;
+      max-width: 100%;
+    padding: 0;
   }
 }
 @media (max-width: 480px){
     nav {
-        max-width: 90%;
+        max-width: 100%;
     }
 }
 @media (max-width: 920px) {
@@ -195,9 +196,34 @@ input[type="checkbox"]{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5%;
+    margin: 3%;
 }
-.caracteristica__seccion {
+@media (max-width: 480px){
+    #caracteristicas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.caracteristicas__seccion svg {
+    background-color: #002e55;
+    border-radius: 50%;
+    padding: 15px;
+    display: block;
+    margin: 15px auto;
+
+    
+}
+.caracteristicas__seccion h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin:15px 0 0 0;
+    padding: 0;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+}
+.caracteristicas__seccion p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    line-height: 1.5;
+    padding: 0;
+    text-align: center;
 }
