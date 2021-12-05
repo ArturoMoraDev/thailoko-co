@@ -198,7 +198,7 @@ input[type="checkbox"]{
 }
 @media (max-width: 480px){
     .eslogan {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 .text__decoration__white {
