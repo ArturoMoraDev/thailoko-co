@@ -99,6 +99,7 @@ input[type="checkbox"]{
 @media (max-width: 920px) {
   nav .menu-btn i{
     display: block;
+    padding-right: 15px;
   }
     #click:checked ~ .menu-btn i:before{
     content: "\f00d";
@@ -355,24 +356,35 @@ input[type="checkbox"]{
 }
 
 /* BENTO */
-.bento {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.bento-thai {
+  margin: 1px 0 50% 0;
 }
-.bento p {
-    font-family: 'hakubo_free_trialregular', sans-serif;
-    font-size: 75px;
-    font-weight: bold;
-    margin: 3% auto;
-    padding: 0;
-    text-align: center;
+.bento {
+  width: 100%;
 }
 .bento img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: flex;
+width: 100%;
+}
+.text-bento {
+width: 100%;
+position: relative;
+margin-top: -65%;
+}
+.text-bento p {
+font-family: 'hakubo_free_trialregular', sans-serif;
+text-align: center;
+color: white;
+font-size: 75px;
+}
+@media (max-width: 768px){
+  .text-bento p {
+    font-size: 50px;
+  }
+}
+@media (max-width: 480px){
+  .text-bento p {
+    font-size: 30px;
+  }
 }
 
 /* NAVEGACION 2 LINK */
@@ -444,6 +456,12 @@ input[type="checkbox"]{
   flex-direction: row;
   justify-content: center;
   margin: auto;
+}
+@media (max-width: 480px){
+    .social-links {
+        justify-content: space-between;
+        margin: 0;
+    }
 }
 .social-links li a {
   text-decoration: none;
