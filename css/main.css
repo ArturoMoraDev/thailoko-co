@@ -179,6 +179,11 @@ input[type="checkbox"]{
   background-size: 100%;
   padding: 20% 20% 5% 5%;
 }
+/* @media (max-width: 768px){
+  .imagen-fondo{
+    padding: 12% 20% 5% 5%;
+  }
+} */
 .eslogan {
     color: #000;
     font-size: 45px;
@@ -186,9 +191,14 @@ input[type="checkbox"]{
     font-family: 'heavitasregular', sans-serif;
     line-height: 1.6;
 }
+@media (max-width: 768px){
+  .eslogan {
+    font-size: 35px;
+  }
+}
 @media (max-width: 480px){
     .eslogan {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 .text__decoration__white {
