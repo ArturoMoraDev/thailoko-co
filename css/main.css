@@ -234,8 +234,18 @@ input[type="checkbox"]{
 }
 .destacados {
     max-width: 100%;
-
 }
+@media (max-width: 768px){
+    .destacados {
+      padding-bottom: 3%;
+    }
+}
+@media (max-width: 480px){
+    .destacados {
+      padding-bottom: 3%;
+    }
+}
+
 .destacados h4 {
   text-align: center;
   font-size: 40px;
@@ -343,6 +353,28 @@ input[type="checkbox"]{
         font-size: 16px;
     }
 }
+
+/* BENTO */
+.bento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bento p {
+    font-family: 'hakubo_free_trialregular', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    margin: 3% auto;
+    padding: 0;
+    text-align: center;
+}
+.bento img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+}
+
 /* NAVEGACION 2 LINK */
 #navegacion-2-link {
     display: grid;
@@ -355,11 +387,13 @@ input[type="checkbox"]{
 @media (max-width: 768px){
     #navegacion-2-link {
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2%;
     }
 }
 @media (max-width: 480px){
     #navegacion-2-link {
         grid-template-columns: repeat(1, 1fr);
+        margin: 6% 0 20% 0;
     }
 }
 .mantente-info h4 {
@@ -381,6 +415,13 @@ input[type="checkbox"]{
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 480px){
+    .pages-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .pages-2 h4 {
   font-size: 24px;
   font-weight: bold;
@@ -395,14 +436,20 @@ input[type="checkbox"]{
   display: flex;
   flex-direction: column;
 }
+.logo-nav-2 {
+  max-width: 50%;
+}
 .social-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: auto;
 }
 .social-links li a {
   text-decoration: none;
   color: black;
+  margin: auto;
+  text-align: center;
 }
 .logo-social-links li{
   display: flex;
@@ -416,10 +463,16 @@ input[type="checkbox"]{
   justify-content: center;
   background-color: var(--color-1);
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin: auto;
   padding: auto;
+}
+@media (max-width: 768px){
+    .logo-background {
+        width: 250px;
+        height: 250px;
+    }
 }
 .logo-background img {
   position: relative;
@@ -432,6 +485,13 @@ input[type="checkbox"]{
 .important-links {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 480px){
+  .important-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 }
 .important-links h4 {
   font-size: 24px;
