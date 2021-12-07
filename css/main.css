@@ -605,6 +605,32 @@ padding: 0;
   padding: 0;
   max-width: 1200px;
 }
+.icon__direction-phone-email-1 img {
+  width: 45px;
+  height: 45px;
+  margin: 13% 13%; 
+}
+.icon__direction-phone-email-2 img {
+  width: 40px;
+  height: 40px;
+  margin: 16% 16%; 
+}
+.icon__direction-phone-email-3 img {
+  width: 40px;
+  height: 40px;
+  margin: 20% 22%; 
+}
+.icon__direction-phone-email-1, .icon__direction-phone-email-2, .icon__direction-phone-email-3 {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-2);
+  border-radius: 50%;
+  margin-right: 4%;
+}
+.direction, .phone, .email {
+  display: flex;
+  align-items: center;
+}
 .direction-phone-email {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -614,9 +640,55 @@ padding: 0;
   padding: 0 0 0 0;
   max-width: 1200px;
 }
+.form-f {
+  padding: 3%;
+}
+.contenedor-campos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  margin: 0 0 10% 0;
+}
+.correo {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+.mensaje {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+.campo {
+  margin-bottom: 10px;
+  min-width: 100%;
+}
+.campo label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+}
+.campo input[type="text"], .campo input[type="tel"], .campo input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+.campo textarea {
+  width: 100%;
+  padding: 5px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  height: 150px;
+}
+.enviar {
+  display: flex;
+  justify-content: flex-end;
+}
 iframe {
   width: 100%;
-  height: 100%;
+  height: 85%;
   border: none;
 }
 hr {
@@ -664,9 +736,4 @@ hr {
 .derechos p a {
     color: #fff;
     text-decoration: none;
-}
-
-.pdf-menu {
-  min-width: 100%; 
-  min-height: 1440px;
 }
