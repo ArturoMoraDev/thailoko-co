@@ -440,7 +440,7 @@ padding: 0;
   }
 }
 .text-bento-2 img {
-  width: 20%;
+  width: 15%;
   height: auto;
   margin-left: 20px;
 }
@@ -821,6 +821,30 @@ hr {
   }
 }
 
+/* NOSOTROS */
+.imagen-fondo-nosotros {
+  background-image: url(/img/background-nosotros.webp);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 60%;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 0 0 70px 70px;
+}
+@media (max-width: 768px){
+    .imagen-fondo-contacto {
+        border-radius: 0 0 20px 20px;
+    }
+}
+.nosotros-title {
+  text-shadow: -4px 4px 4px var(--color-1),
+				4px 4px 4px var(--color-1),
+				4px -4px 4px var(--color-1),
+				-4px -4px 4px var(--color-1);
+  /* -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: unset; */
+}
+
 /* WHATSAPP BOTON */
 .whatsapp {
   position:fixed;
@@ -839,6 +863,26 @@ hr {
   height: 50px;
   width: 50px;
   margin: 9px/*arriba*/9px/*derecha*/ 10px/*abajo*/9px/*izquierda*/;
+}
+
+/* COUNTRY BOTON */
+.country {
+  position:fixed;
+  width: 65px;
+  height: 65px;
+  bottom: 40px;
+  left: 30px;
+  background-color: white;
+  color:#FFF;
+  border-radius: 50%;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+.country__icon {
+  height: 65px;
+  width: 65px;
+  margin: auto;
 }
 
 /* FOOTER */
