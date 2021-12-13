@@ -31,12 +31,16 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 body {
-    max-width: 100%;
+    max-width: 1440px;
     background-color: #ececec;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;
     color: #000;
+}
+h1 {
+  display: none;
 }
 nav{
   display: flex;
