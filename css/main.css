@@ -869,6 +869,13 @@ hr {
   gap: 2%;
   margin: 5% auto 5% auto;
 }
+@media (max-width: 768px){
+  .contenedor-texto-nosotros {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2%;
+    margin: 5% auto 5% auto;
+  }
+}
 .divicion-historias {
   max-width: 70%;
 }
@@ -877,6 +884,13 @@ hr {
   grid-template-columns: repeat(1, 30% 70%);
   gap: 2%;
   margin: 5% auto 10% auto;
+}
+@media (max-width: 768px){
+  .contenedor-texto-nosotros-2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2%;
+    margin: 5% auto 5% auto;
+  }
 }
 .contenedor-texto-nosotros-2 img {
   grid-column: 1 / 1;
@@ -907,6 +921,19 @@ hr {
   height: auto;
   border-radius: 10px;
   margin: 2% auto;
+}
+@media (max-width: 768px){
+  .contenedor-texto-nosotros img, .contenedor-texto-nosotros-2 img {
+    grid-row: 1;
+    width: 20%;
+    height: auto;
+  }
+}
+@media (max-width: 480px){
+    .contenedor-texto-nosotros img, .contenedor-texto-nosotros-2 img {
+      width: 35%;
+      height: auto;
+    }
 }
 
 /* WHATSAPP BOTON */
